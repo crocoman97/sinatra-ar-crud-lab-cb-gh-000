@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
 
-  patch 'posts/:id/edited' do 
+  post 'posts/:id/edited' do 
     @post = Post.find_by_id(params[:id])
     @post.name = params[:name]
     @post.content = params[:content]
