@@ -1,6 +1,6 @@
 <p>Name: <%=@post.name%></p>
 <p>Content: <%=@post.content%></p>
-<form method="post" action="/posts/<%=@post.id%>">
+<form method="post" action="/posts/<%=@post.id%>/edited">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <p>Name: <input type="text" value="<%= @post.name %>" name="name">
   <p>Content: <input type="text" value="<%= @post.content %>" name="content"></p>
